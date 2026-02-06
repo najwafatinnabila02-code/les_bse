@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 5 - Box Model CSS</title>
+<style>
+    /* RESET + BEST PRACTICE */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: center;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        margin: 20px 0 10px;
+    }
+
+    /* CONTAINER */
+    .container {
+        background: #f2f2f2;
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 2px solid #ccc;
+    }
+
+    /* WIDTH & HEIGHT */
+    .box {
+        width: 400px;
+        height: 200px;
+        background: lightblue;
+        border: 3px solid blue;
+        margin-bottom: 20px;
+    }
+
+    /* PADDING */
+    .padding-box {
+        background: rgb(106, 100, 184);
+        padding: 30px;
+        border: 3px solid green;
+        margin-bottom: 15px;
+    }
+
+    /* MARGIN */
+    .margin-box {
+        background: lightcoral;
+        padding: 20px;
+        margin: 40px;
+        border: 3px solid red;
+    }
+
+    /* CENTER DENGAN MARGIN AUTO */
+    .center-box {
+        width: 300px;
+        background: lightyellow;
+        padding: 15px;
+        margin: 20px auto;
+        border: 3px solid orange;
+        text-align: right;
+    }
+
+    /* CONTENT-BOX */
+    .content-box {
+        box-sizing: content-box;
+        width: 300px;
+        padding: 20px;
+        border: 5px solid black;
+        background: #ddd;
+        margin-bottom: 15px;
+    }
+
+    /* BORDER-BOX */
+    .border-box {
+        box-sizing: border-box;
+        width: 300px;
+        padding: 20px;
+        border: 5px solid black;
+        background-color: #bbb;
+    }
+    </style>
+</head>
+<body>
+   
+    <h1>PERTEMUAN 5 - BOX MODEL CSS</h1>
+
+    <div class="container">
+        <h2>1. width & Height</h2>
+        <div class="box">Content</div>
+    </div>
+  
+    <div class="container">
+        <h2>2. Padding</h2>
+        <div class="padding-box">Padding menambahkan ruang di dalam elemen</div>
+    </div>
+
+    <div class="container">
+        <h2>3. Margin</h2>
+        <div class="margin-box">Margin memberi jarak luar</div>
+    </div>
+
+    <div class="container">
+        <h2>4. Margin Auto (center)</h2>
+        <div class="center-box">Box center</div>
+    </div>
+
+    <div class="container">
+        <h2>5. box-sizing</h2>
+        <div class="container-box">container-box (lebih besar)</div>
+        <div class="border-box">border-box (tetap 300px)</div>
+    </div>
+
+
+    
+</body>
+</html>
